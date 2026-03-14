@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+<meta charset="UTF-8">
 <title>AppSecAI</title>
 
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, Helvetica, sans-serif;
 margin:0;
 background:#0f172a;
 color:white;
 }
 
 .container{
-width:90%;
 max-width:1000px;
 margin:auto;
+padding:0 20px;
 }
 
 .hero{
@@ -23,20 +25,21 @@ text-align:center;
 padding:120px 20px;
 }
 
-h1{
-font-size:52px;
+.hero h1{
+font-size:54px;
 margin-bottom:10px;
 }
 
 .subtitle{
-color:#94a3b8;
 font-size:20px;
+color:#94a3b8;
+margin-bottom:30px;
 }
 
 .button{
 display:inline-block;
-margin:15px;
-padding:12px 22px;
+margin:10px;
+padding:12px 24px;
 background:#22c55e;
 color:black;
 text-decoration:none;
@@ -44,73 +47,129 @@ border-radius:6px;
 font-weight:bold;
 }
 
+.button.secondary{
+background:#1e293b;
+color:white;
+}
+
 .section{
-padding:70px 0;
+padding:80px 0;
 border-top:1px solid #1e293b;
 }
 
 .section h2{
-font-size:30px;
+font-size:32px;
 margin-bottom:20px;
+}
+
+.section p{
+color:#cbd5f5;
+line-height:1.6;
+}
+
+ul{
+margin-top:20px;
+line-height:1.8;
 }
 
 .footer{
 text-align:center;
 padding:40px;
 color:#64748b;
+border-top:1px solid #1e293b;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="hero container">
-<h1>AppSecAI</h1>
-<p class="subtitle">AI Tools for Application Security Engineers</p>
 
-<a class="button" href="#">View Project</a>
-<a class="button" href="#">GitHub</a>
+<h1>AppSecAI</h1>
+
+<p class="subtitle">
+AI Tools for Application Security Engineers
+</p>
+
+<p>
+Automating security reviews directly inside Pull Requests using AI.
+</p>
+
+<a class="button" href="https://github.com">View GitHub</a>
+<a class="button secondary" href="#">Follow on X</a>
+
 </div>
 
+
 <div class="section container">
-<h2>PR Security Agent</h2>
+
+<h2>Project Vision</h2>
+
 <p>
-AI agent that analyzes Pull Requests and detects security vulnerabilities before merge.
+Application security reviews are often manual, slow, and skipped under delivery pressure.
+AppSecAI aims to automate security feedback directly in the developer workflow.
+</p>
+
+<p>
+Our goal is to build AI-powered tools that help developers detect security issues early,
+before vulnerable code reaches production.
+</p>
+
+</div>
+
+
+<div class="section container">
+
+<h2>PR Security Agent</h2>
+
+<p>
+PR Security Agent is an AI-powered reviewer that analyzes Pull Requests and detects
+security vulnerabilities before code is merged.
 </p>
 
 <ul>
 <li>Detect injection vulnerabilities</li>
-<li>Find hardcoded secrets</li>
+<li>Identify hardcoded secrets</li>
 <li>Suggest secure code fixes</li>
 <li>Comment directly on Pull Requests</li>
+<li>Integrate with developer workflows</li>
 </ul>
 
 </div>
+
 
 <div class="section container">
 
 <h2>Roadmap</h2>
 
 <ul>
-<li>Phase 1 – AI Pull Request vulnerability review</li>
-<li>Phase 2 – Secret detection & prompt injection scanning</li>
-<li>Phase 3 – AI threat modeling</li>
+<li><strong>Phase 1</strong> – AI Pull Request vulnerability review</li>
+<li><strong>Phase 2</strong> – Secret detection and prompt injection scanning</li>
+<li><strong>Phase 3</strong> – AI-powered threat modeling</li>
 </ul>
 
 </div>
+
 
 <div class="section container">
 
 <h2>Open Source</h2>
 
 <p>
-Built in public. Follow development on GitHub.
+AppSecAI is an open-source initiative focused on improving developer-first security tools.
+</p>
+
+<p>
+Follow development and contribute on GitHub.
 </p>
 
 </div>
 
-<section class="section container">
+
+<div class="section container">
+
 <h2>Security</h2>
 
 <p>
@@ -118,16 +177,25 @@ If you discover a security vulnerability in AppSecAI, please report it responsib
 </p>
 
 <p>
-Email: security@appsecai.xyz
+Contact: <strong>security@appsecai.xyz</strong>
 </p>
 
 <p>
-We follow responsible disclosure practices and appreciate security research contributions.
+We follow responsible disclosure practices and appreciate contributions
+from the security research community.
 </p>
 
-</section>
+</div>
+
+
 <div class="footer">
+
 © AppSecAI
+
+<br><br>
+
+Built for the Application Security community.
+
 </div>
 
 </body>
