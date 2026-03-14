@@ -2,31 +2,118 @@
 <html>
 <head>
 <title>AppSecAI</title>
+
 <style>
+
 body{
 font-family: Arial;
-text-align:center;
-padding-top:120px;
+margin:0;
 background:#0f172a;
 color:white;
 }
-h1{font-size:48px}
-p{font-size:20px;color:#94a3b8}
+
+.container{
+width:90%;
+max-width:1000px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+h1{
+font-size:52px;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#94a3b8;
+font-size:20px;
+}
+
+.button{
+display:inline-block;
+margin:15px;
+padding:12px 22px;
+background:#22c55e;
+color:black;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.section{
+padding:70px 0;
+border-top:1px solid #1e293b;
+}
+
+.section h2{
+font-size:30px;
+margin-bottom:20px;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+color:#64748b;
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="hero container">
 <h1>AppSecAI</h1>
-<p>AI Tools for Application Security Engineers</p>
+<p class="subtitle">AI Tools for Application Security Engineers</p>
 
+<a class="button" href="#">View Project</a>
+<a class="button" href="#">GitHub</a>
+</div>
+
+<div class="section container">
+<h2>PR Security Agent</h2>
 <p>
-🚧 PR Security Agent coming soon
+AI agent that analyzes Pull Requests and detects security vulnerabilities before merge.
 </p>
 
+<ul>
+<li>Detect injection vulnerabilities</li>
+<li>Find hardcoded secrets</li>
+<li>Suggest secure code fixes</li>
+<li>Comment directly on Pull Requests</li>
+</ul>
+
+</div>
+
+<div class="section container">
+
+<h2>Roadmap</h2>
+
+<ul>
+<li>Phase 1 – AI Pull Request vulnerability review</li>
+<li>Phase 2 – Secret detection & prompt injection scanning</li>
+<li>Phase 3 – AI threat modeling</li>
+</ul>
+
+</div>
+
+<div class="section container">
+
+<h2>Open Source</h2>
+
 <p>
-Follow updates on GitHub
+Built in public. Follow development on GitHub.
 </p>
+
+</div>
+
+<div class="footer">
+© AppSecAI
+</div>
 
 </body>
+
 </html>
