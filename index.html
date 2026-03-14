@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <title>AppSecAI</title>
@@ -91,18 +90,26 @@ z-index:-1;
 background:#0f172a;
 }
 
-.terminal{
-background:#020617;
-border:1px solid #1e293b;
-border-radius:8px;
-padding:20px;
-font-family:monospace;
-color:#22c55e;
-margin-top:30px;
+.architecture{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:12px;
+margin-top:40px;
 }
 
-.terminal-line{
-margin:6px 0;
+.box{
+background:#020617;
+border:1px solid #1e293b;
+padding:14px 20px;
+border-radius:6px;
+font-family:monospace;
+color:#22c55e;
+}
+
+.arrow{
+font-size:22px;
+color:#22c55e;
 }
 
 </style>
@@ -151,6 +158,37 @@ AppSecAI aims to automate security feedback directly in developer workflows usin
 
 <div class="section container">
 
+<h2>How It Works</h2>
+
+<p>
+AppSecAI integrates with GitHub Pull Requests and automatically analyzes code changes for security vulnerabilities.
+</p>
+
+<div class="architecture">
+
+<div class="box">Developer opens Pull Request</div>
+<div class="arrow">↓</div>
+
+<div class="box">GitHub Webhook Trigger</div>
+<div class="arrow">↓</div>
+
+<div class="box">Fetch PR Diff / Changed Files</div>
+<div class="arrow">↓</div>
+
+<div class="box">AI Security Analysis</div>
+<div class="arrow">↓</div>
+
+<div class="box">Detect Vulnerabilities</div>
+<div class="arrow">↓</div>
+
+<div class="box">Post Inline Security Comments</div>
+
+</div>
+
+</div>
+
+<div class="section container">
+
 <h2>PR Security Agent</h2>
 
 <p>
@@ -161,26 +199,9 @@ An AI-powered agent that reviews Pull Requests and detects security vulnerabilit
 <li>Detect injection vulnerabilities</li>
 <li>Identify hardcoded secrets</li>
 <li>Suggest secure coding fixes</li>
+<li>Analyze changed files only</li>
 <li>Comment directly on Pull Requests</li>
 </ul>
-
-</div>
-
-<div class="section container">
-
-<h2>Live Demo</h2>
-
-<div class="terminal">
-
-<div class="terminal-line">$ scanning pull request #24</div>
-<div class="terminal-line">Analyzing changed files...</div>
-<div class="terminal-line">Detecting potential vulnerabilities...</div>
-<div class="terminal-line">⚠ SQL Injection risk detected</div>
-<div class="terminal-line">Suggestion: Use parameterized queries</div>
-<div class="terminal-line">Posting comment to GitHub PR...</div>
-<div class="terminal-line">✔ Comment added successfully</div>
-
-</div>
 
 </div>
 
@@ -201,7 +222,7 @@ An AI-powered agent that reviews Pull Requests and detects security vulnerabilit
 <h2>Open Source</h2>
 
 <p>
-AppSecAI is an open-source initiative focused on improving developer-first security tools.
+AppSecAI is an open-source initiative focused on improving developer-first security tooling.
 </p>
 
 <p>
@@ -283,5 +304,4 @@ setInterval(draw,33);
 </script>
 
 </body>
-
 </html>
