@@ -15,10 +15,8 @@
 <div>
 <a href="index.html">Home</a>
 <a href="tools.html">Tools</a>
-<a href="research.html">Research</a>
 <a href="blog.html">Blog</a>
 <a href="about.html">About</a>
-<a href="security.html">Security</a>
 </div>
 
 </div>
@@ -29,30 +27,48 @@
 
 <h1>Tools</h1>
 
+<p>
+AppSecAI develops experimental tools focused on improving application security workflows using automation and artificial intelligence.
+</p>
+
+
 <div class="card">
 
 <h3>PR Security Agent</h3>
 
 <p>
-An AI-powered assistant that reviews Pull Requests and detects potential security vulnerabilities.
+PR Security Agent is an AI-assisted security reviewer designed to analyze Pull Requests and detect potential security vulnerabilities before code is merged.
 </p>
 
 <p>
-Focus areas include:
+The goal is to integrate security feedback directly into the developer workflow and reduce the time required for manual security reviews.
 </p>
 
 <ul>
-<li>Injection vulnerabilities</li>
-<li>Hardcoded secrets</li>
-<li>Unsafe coding patterns</li>
+
+<li>Analyzes code changes in Pull Requests</li>
+
+<li>Detects potential injection vulnerabilities</li>
+
+<li>Identifies hardcoded secrets and unsafe patterns</li>
+
+<li>Posts security findings as PR comments</li>
+
 </ul>
 
 <p>
+<strong>Status:</strong> Early development
+</p>
+
+<p>
 Repository:
-https://github.com/appsecai-labs/pr-security-agent
+<a href="https://github.com/appsecai-labs/pr-security-agent" target="_blank">
+github.com/appsecai-labs/pr-security-agent
+</a>
 </p>
 
 </div>
+
 
 
 <div class="card">
@@ -60,16 +76,36 @@ https://github.com/appsecai-labs/pr-security-agent
 <h3>ThreatModel AI</h3>
 
 <p>
-A threat modeling assistant that converts architecture descriptions into structured threat models using AI and Threagile.
+ThreatModel AI explores the use of artificial intelligence to assist with threat modeling by converting architecture descriptions into structured threat models.
 </p>
 
 <p>
-The goal is to simplify threat modeling for engineering teams and make security architecture reviews easier.
+The project integrates with Threagile to generate threat analysis based on system architecture definitions.
+</p>
+
+<ul>
+
+<li>Generate threat models from architecture descriptions</li>
+
+<li>Automate creation of Threagile YAML models</li>
+
+<li>Support security architecture analysis</li>
+
+</ul>
+
+<p>
+<strong>Status:</strong> Research / design phase
 </p>
 
 </div>
 
+
+</div>
+
+
+<div class="footer">
+© AppSecAI
 </div>
 
 </body>
-</
+</html>
