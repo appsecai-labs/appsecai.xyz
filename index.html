@@ -1,256 +1,126 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <title>AppSecAI</title>
-
-<style>
-
-body{
-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-margin:0;
-background:#0f172a;
-color:white;
-}
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:0 20px;
-}
-
-.hero{
-text-align:center;
-padding:120px 20px 100px 20px;
-}
-
-.hero h1{
-font-size:56px;
-margin-bottom:10px;
-}
-
-.subtitle{
-font-size:20px;
-color:#94a3b8;
-margin-bottom:30px;
-}
-
-.button{
-display:inline-block;
-margin:10px;
-padding:12px 24px;
-background:#22c55e;
-color:black;
-text-decoration:none;
-border-radius:6px;
-font-weight:600;
-}
-
-.button.secondary{
-background:#1e293b;
-color:white;
-}
-
-.section{
-padding:80px 0;
-border-top:1px solid #1e293b;
-}
-
-.section h2{
-font-size:32px;
-margin-bottom:20px;
-}
-
-.section p{
-color:#cbd5f5;
-line-height:1.6;
-}
-
-ul{
-margin-top:20px;
-line-height:1.8;
-color:#cbd5f5;
-}
-
-.footer{
-text-align:center;
-padding:40px;
-color:#64748b;
-border-top:1px solid #1e293b;
-margin-top:60px;
-}
-
-.architecture{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:12px;
-margin-top:40px;
-}
-
-.box{
-background:#020617;
-border:1px solid #1e293b;
-padding:14px 20px;
-border-radius:6px;
-font-family:monospace;
-color:#22c55e;
-}
-
-.arrow{
-font-size:22px;
-color:#22c55e;
-}
-
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<nav>
+<div class="container">
+
+<div><strong>AppSecAI</strong></div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="blog.html">Blog</a>
+<a href="about.html">About</a>
+</div>
+
+</div>
+</nav>
+
 
 <div class="hero container">
 
 <h1>AppSecAI</h1>
 
-<p class="subtitle">
-AI Tools for Application Security Engineers
+<p>
+AI tools and experiments focused on improving application security workflows.
 </p>
 
 <p>
-Automating security reviews directly inside Pull Requests using AI.
+Open-source projects exploring how artificial intelligence can support secure software development.
 </p>
 
-<a class="button" href="https://github.com/appsecai-labs/pr-security-agent" target="_blank">
-View GitHub
-</a>
-
-<a class="button secondary" href="https://x.com/appsec_ai" target="_blank">
-Follow on X
-</a>
-
 </div>
+
+
 
 <div class="section container">
 
-<h2>Project Vision</h2>
+<h2>Purpose</h2>
 
 <p>
-Application security reviews are often manual and slow. Developers frequently merge insecure code under delivery pressure.
+AppSecAI is a security engineering lab focused on experimenting with practical applications of artificial intelligence in application security.
 </p>
 
 <p>
-AppSecAI aims to automate security feedback directly in developer workflows using AI-powered code analysis.
+The initiative explores how security can integrate more effectively into modern software development processes through automation and developer-focused tooling.
 </p>
 
 </div>
+
+
 
 <div class="section container">
 
-<h2>How It Works</h2>
+<h2>Current Projects</h2>
+
+<div class="card">
+
+<h3>PR Security Agent</h3>
 
 <p>
-AppSecAI integrates with GitHub Pull Requests and automatically analyzes code changes for security vulnerabilities.
+An AI-assisted security reviewer designed to analyze Pull Requests and identify potential vulnerabilities before code is merged.
 </p>
-
-<div class="architecture">
-
-<div class="box">Developer opens Pull Request</div>
-<div class="arrow">↓</div>
-
-<div class="box">GitHub Webhook Trigger</div>
-<div class="arrow">↓</div>
-
-<div class="box">Fetch PR Diff / Changed Files</div>
-<div class="arrow">↓</div>
-
-<div class="box">AI Security Analysis</div>
-<div class="arrow">↓</div>
-
-<div class="box">Detect Vulnerabilities</div>
-<div class="arrow">↓</div>
-
-<div class="box">Post Inline Security Comments</div>
-
-</div>
-
-</div>
-
-<div class="section container">
-
-<h2>PR Security Agent</h2>
 
 <p>
-An AI-powered agent that reviews Pull Requests and detects security vulnerabilities before code is merged.
+The goal is to bring security feedback directly into the developer workflow and reduce manual security review effort.
 </p>
 
-<ul>
-
-<li>Detect injection vulnerabilities</li>
-<li>Identify hardcoded secrets</li>
-<li>Suggest secure coding fixes</li>
-<li>Analyze changed files only</li>
-<li>Comment directly on Pull Requests</li>
-
-</ul>
+<p>
+<a href="tools.html">View tool →</a>
+</p>
 
 </div>
 
-<div class="section container">
 
-<h2>Roadmap</h2>
 
-<ul>
+<div class="card">
 
-<li><strong>Phase 1</strong> – AI Pull Request vulnerability review</li>
-<li><strong>Phase 2</strong> – Secret detection and prompt injection scanning</li>
-<li><strong>Phase 3</strong> – AI-powered threat modeling</li>
+<h3>ThreatModel AI</h3>
 
-</ul>
+<p>
+An experimental project exploring how AI can assist with threat modeling by converting architecture descriptions into structured threat models.
+</p>
+
+<p>
+The tool integrates with Threagile to generate threat analysis automatically from architecture definitions.
+</p>
+
+<p>
+<a href="tools.html">View tool →</a>
+</p>
 
 </div>
+
+</div>
+
+
 
 <div class="section container">
 
 <h2>Open Source</h2>
 
 <p>
-AppSecAI is an open-source initiative focused on improving developer-first security tooling.
+Projects developed under AppSecAI are published as open-source tools intended to explore new approaches to application security automation.
 </p>
 
 <p>
-Follow development and contribute on GitHub.
+Source code and experiments are available through the AppSecAI GitHub organization.
 </p>
 
 </div>
 
-<div class="section container">
 
-<h2>Security</h2>
-
-<p>
-If you discover a vulnerability in AppSecAI, please report it responsibly.
-</p>
-
-<p>
-Contact: <strong>security@appsecai.xyz</strong>
-</p>
-
-<p>
-We follow responsible disclosure practices and appreciate contributions from the security research community.
-</p>
-
-</div>
 
 <div class="footer">
 
 © AppSecAI
 
-<br><br>
-
-Built for the Application Security community.
-
 </div>
 
-</body>
-</html>
+</body
